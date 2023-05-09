@@ -13,7 +13,10 @@
   background-attachment: fixed;
   margin-top: 55px;
 }
-
+.logo{
+  width: 30px;
+  height: 30px;
+}
 .section-bandas {
   padding: 50px;
   background-color: rgb(5, 7, 15);

@@ -99,6 +99,11 @@ h2 {
 .p-datos {
   color: rgb(162, 186, 232);
 }
+.datos-3{
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
 
 /* TEMPORADAS */
 .card-mio{
@@ -132,6 +137,9 @@ font-family: 'Shadows Into Light', cursive;
   h1 {
     font-size: 40px;
   }
+  .subtitle{
+    font-size: 35px;
+  }
 
   /* DATOS */
   .datos-1 {
@@ -147,5 +155,13 @@ font-family: 'Shadows Into Light', cursive;
   .datos-3 {
     display: flex;
     flex-direction: row;
+  }
+  .datos-3 img{
+    width: 160px;
+    height: 160x;
+  }
+  .img-datos-m{
+    width: 320px;
+    height: 270px;
   }
 }

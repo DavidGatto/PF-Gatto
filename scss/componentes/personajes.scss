@@ -1,0 +1,11 @@
+.title_pj{
+    color:nth($colores ,4);
+    font-family: 'Bungee Shade', cursive;
+  }
+ 
+    .personajes {
+      @media (max-width: 768px) {
+      display: flex;
+      flex-direction: column;
+    }
+  }

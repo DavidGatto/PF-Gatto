@@ -1,22 +1,28 @@
+.dat-center, .titulos {
+  display: flex;
+  justify-content: center;
+}
+
 * {
   margin: 0;
   padding: 0;
-  font-family: 'Poppins', sans-serif;
+  font-family: "Poppins", sans-serif;
 }
 
 .principal {
-  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)),
-    url(../img/riverdale-pop-s-chock-lit-shoppe-5cm5n8oqtxkuv0mk.jpg);
+  background: linear-gradient(rgba(5, 7, 12, 0.75), rgba(5, 7, 12, 0.75)), url(../img/riverdale-pop-s-chock-lit-shoppe-5cm5n8oqtxkuv0mk.jpg);
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center center;
   background-attachment: fixed;
   margin-top: 55px;
 }
-.logo{
+
+.logo {
   width: 30px;
   height: 30px;
 }
+
 .section-bandas {
   padding: 50px;
   background-color: rgb(5, 7, 15);
@@ -35,15 +41,16 @@ h1 {
   transition: 1s;
   font-size: 65px;
   padding: 10px;
-  font-family: 'Silkscreen', cursive;
+  font-family: "Silkscreen", cursive;
 }
-
 h1:hover {
-  text-shadow: 0 0 5px darkblue,
-    0 0 25px darkblue,
-    0 0 50px darkblue,
-    0 0 100px darkblue;
+  text-shadow: 0 0 5px darkblue, 0 0 25px darkblue, 0 0 50px darkblue, 0 0 100px darkblue;
   transform: scale(1.1);
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 40px;
+  }
 }
 
 p {
@@ -55,11 +62,15 @@ p {
   color: rgb(162, 186, 232);
   font-size: 55px;
 }
+@media (max-width: 768px) {
+  .subtitle {
+    font-size: 35px;
+  }
+}
 
 .navbar-color {
   color: white;
 }
-
 .navbar-color:hover {
   color: cornflowerblue;
   transform: scale(1.1);
@@ -70,14 +81,19 @@ h2 {
 }
 
 .footer_fuente {
-  font-family: 'Dancing Script', cursive;
+  font-family: "Dancing Script", cursive;
 }
 
-.btn-mio:hover{
+.btn-mio:hover {
   color: rgb(115, 129, 158);
 }
 
-/* GALERIA */
+@media (max-width: 768px) {
+  .riverdale-logo {
+    width: 300px;
+    height: 150px;
+  }
+}
 #galeria .col-lg-4 {
   padding: 10px;
   margin: 0;
@@ -88,83 +104,82 @@ h2 {
   height: 210px;
   transition: 1s;
 }
-
 #galeria img:hover {
   transform: scale(1.1);
 }
 
-/* PERSONAJES */
-.title_pj{
+.title_pj {
   color: cornflowerblue;
-  font-family: 'Bungee Shade', cursive;
+  font-family: "Bungee Shade", cursive;
 }
-/* DATOS */
-.p-datos {
-  color: rgb(162, 186, 232);
-}
-.datos-3{
-  display: flex;
-  flex-direction: column;
-  gap: 10px;
-}
-
-/* TEMPORADAS */
-.card-mio{
-  background-color: black;
-}
-.title_temporadas{
-color: cornflowerblue;
-font-family: 'Shadows Into Light', cursive;
-}
-
-.p-temporadas{
-  color: rgb(115, 129, 158);
-}
-
-
 
 @media (max-width: 768px) {
-
-  /* INDEX */
-  .riverdale-logo {
-    width: 300px;
-    height: 150px;
-  }
-
-  /* PERSONAJES */
   .personajes {
     display: flex;
     flex-direction: column;
   }
+}
 
-  h1 {
-    font-size: 40px;
-  }
-  .subtitle{
-    font-size: 35px;
-  }
+.p-datos {
+  color: rgb(162, 186, 232);
+}
 
-  /* DATOS */
-  .datos-1 {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .datos-2 {
-    display: flex;
-    flex-direction: column-reverse;
-  }
-
+.datos-3 {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+@media (max-width: 768px) {
   .datos-3 {
     display: flex;
     flex-direction: row;
   }
-  .datos-3 img{
+}
+
+@media (max-width: 768px) {
+  .datos-3 img {
     width: 160px;
     height: 160x;
   }
-  .img-datos-m{
+}
+
+.dat-center {
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+  .datos-1 {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+@media (max-width: 768px) {
+  .datos-2 {
+    display: flex;
+    flex-direction: column-reverse;
+  }
+}
+
+@media (max-width: 768px) {
+  .img-datos-m {
     width: 320px;
     height: 270px;
   }
 }
+
+.card-mio {
+  background-color: black;
+}
+
+.title_temporadas {
+  color: cornflowerblue;
+  font-family: "Shadows Into Light", cursive;
+}
+
+.p-temporadas {
+  color: rgb(115, 129, 158);
+}
+
+/*# sourceMappingURL=style.css.map */

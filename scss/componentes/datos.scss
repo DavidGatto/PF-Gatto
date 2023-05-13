@@ -1,0 +1,43 @@
+.p-datos {
+    color:nth($colores, 3);
+  }
+  .datos-3 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    @media (max-width: 768px) {
+      display: flex;
+    flex-direction: row;
+    }
+  }
+  
+  .datos-3 img{
+    @media (max-width: 768px) {
+    width: 160px;
+    height: 160x;
+    }
+  }
+  
+  .dat-center{
+    @extend %dis-cen;
+    align-items: center;
+    gap: 10px;
+  }
+  .datos-1{
+    @media (max-width: 768px) {
+      display: flex;
+    flex-direction: column;
+  }
+}
+.datos-2{
+  @media (max-width: 768px) {
+    display: flex;
+  flex-direction: column-reverse;
+}
+}
+.img-datos-m{
+  @media (max-width: 768px) {
+  width: 320px;
+  height: 270px;
+}
+}

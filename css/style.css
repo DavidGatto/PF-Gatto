@@ -56,6 +56,11 @@ h1:hover {
 p {
   color: white;
 }
+@media (max-width: 768px) {
+  p {
+    font-size: 20px;
+  }
+}
 
 .subtitle {
   text-align: center;
@@ -180,6 +185,48 @@ h2 {
 
 .p-temporadas {
   color: rgb(115, 129, 158);
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  width: 450px;
+  margin: auto;
+  background-color: rgb(20, 26, 39);
+  border-radius: 15px;
+}
+@media (max-width: 768px) {
+  .formulario {
+    width: 300px;
+  }
+}
+
+.form-label-mio {
+  color: rgb(63, 152, 210);
+}
+
+.btn-temp-mio {
+  background-color: rgb(32, 73, 101);
+}
+.btn-temp-mio:hover {
+  background-color: rgb(100, 168, 224);
+}
+
+.controls {
+  width: 100%;
+}
+
+.controls-fondo {
+  background-color: rgb(170, 177, 192);
+  border: solid rgb(32, 73, 101);
+}
+.controls-fondo:focus {
+  background-color: rgb(170, 177, 192);
+}
+.controls-fondo::placeholder {
+  color: rgb(102, 137, 203);
 }
 
 /*# sourceMappingURL=style.css.map */

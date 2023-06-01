@@ -1,11 +1,49 @@
-.card-mio{
-    background-color: black;
-  }
-  .title_temporadas{
-  color:nth($colores, 4);
+.card-mio {
+  background-color: black;
+}
+
+.title_temporadas {
+  color: nth($colores, 4);
   font-family: $font-5;
+}
+
+.p-temporadas {
+  color: nth($colores, 5);
+}
+
+.formulario {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 30px;
+  width: 450px;
+  margin: auto;
+  background-color: rgb(20, 26, 39);
+  border-radius: 15px;
+  @media (max-width: 768px) {
+    width: 300px;
+}
+}
+
+.form-label-mio{
+  color: rgb(63, 152, 210);
+}
+.btn-temp-mio{
+  background-color:  rgb(32, 73, 101);
+  &:hover{
+    background-color: rgb(100, 168, 224);
   }
-  
-  .p-temporadas{
-    color:nth($colores, 5);
+}
+.controls{
+  width: 100%;
+}
+.controls-fondo{
+  background-color: rgb(170, 177, 192);
+  &:focus{
+    background-color: rgb(170, 177, 192);
   }
+  &::placeholder{
+    color: rgb(102, 137, 203);
+  }
+  border: solid rgb(32, 73, 101);
+}
